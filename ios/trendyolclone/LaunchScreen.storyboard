@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Powered by React Native" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="MN2-I3-ftu">
+                                <rect key="frame" x="0.0" y="626" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SplashIcons" translatesAutoresizingMaskIntoConstraints="NO" id="xiO-dm-V2B">
+                                <rect key="frame" x="67" y="237" width="266" height="192"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="1" green="0.41213787240897315" blue="0.15975596899711975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xiO-dm-V2B" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="41" id="1Uc-8L-jos"/>
+                            <constraint firstItem="MN2-I3-ftu" firstAttribute="top" secondItem="xiO-dm-V2B" secondAttribute="bottom" constant="228" id="48O-ol-Qp2"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="xiO-dm-V2B" secondAttribute="trailing" constant="68" id="85B-kv-uLg"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="xiO-dm-V2B" secondAttribute="trailing" constant="17" id="BHD-3W-ZxE"/>
+                            <constraint firstItem="MN2-I3-ftu" firstAttribute="top" secondItem="xiO-dm-V2B" secondAttribute="bottom" constant="229" id="BK4-28-36L"/>
+                            <constraint firstItem="MN2-I3-ftu" firstAttribute="top" secondItem="xiO-dm-V2B" secondAttribute="bottom" constant="229" id="IKY-dO-hOl"/>
+                            <constraint firstItem="xiO-dm-V2B" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="249" id="LHh-Ul-oe5"/>
+                            <constraint firstItem="xiO-dm-V2B" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="248" id="OYJ-ms-0kP"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="MN2-I3-ftu" secondAttribute="bottom" constant="20" id="OZV-Vh-mqD"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="xiO-dm-V2B" secondAttribute="trailing" constant="42" id="PvQ-rg-gPd"/>
+                            <constraint firstItem="xiO-dm-V2B" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="17" id="QF0-gC-qN7"/>
+                            <constraint firstItem="xiO-dm-V2B" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="67" id="RDy-MB-SaF"/>
+                            <constraint firstItem="xiO-dm-V2B" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="249" id="Tta-yF-D8a"/>
+                            <constraint firstItem="MN2-I3-ftu" firstAttribute="top" secondItem="xiO-dm-V2B" secondAttribute="bottom" constant="197" id="UzK-93-Wr3"/>
+                            <constraint firstItem="MN2-I3-ftu" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="akx-eg-2ui"/>
+                            <constraint firstItem="xiO-dm-V2B" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="67" id="gAq-sV-hgp"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="xiO-dm-V2B" secondAttribute="trailing" constant="42" id="gBr-CB-vqH"/>
+                            <constraint firstItem="MN2-I3-ftu" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="i1E-0Y-4RG"/>
+                            <constraint firstItem="xiO-dm-V2B" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="217" id="kPQ-XW-PFi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SplashIcons" width="128" height="128"/>
+    </resources>
+</document>
