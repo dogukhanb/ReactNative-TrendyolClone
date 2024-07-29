@@ -1,27 +1,31 @@
-//import liraries
-import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import * as React from 'react';
+import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import RootNavigation from './src/router/rootNavigation';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import TabNavigation from './src/router/tabNavigation';
 
-// create a component
-const MyComponent = () => {
+function HomeStackScreen() {
+  return (
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <Text>Home Stack Screen</Text>
+    </View>
+  );
+}
+
+const Stack = createNativeStackNavigator();
+
+function RootNavigation() {
+  return (
+    <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name="Main" component={TabNavigation} />
+    </Stack.Navigator>
+  );
+}
+
+export default function App() {
   return (
     <NavigationContainer>
       <RootNavigation />
     </NavigationContainer>
   );
-};
-
-// define your styles
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#2c3e50',
-  },
-});
-
-//make this component available to the app
-export default MyComponent;
+}
